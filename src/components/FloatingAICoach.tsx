@@ -174,7 +174,7 @@ export const FloatingAICoach = ({ onInsightGenerated }: FloatingAICoachProps) =>
           <Button
             size="icon"
             variant="ghost"
-            className="absolute -top-2 -left-2 h-6 w-6 rounded-full bg-destructive/90 text-destructive-foreground hover:bg-destructive"
+            className="absolute top-0 left-0 h-6 w-6 rounded-full bg-destructive/90 text-destructive-foreground hover:bg-destructive translate-x-[-50%] translate-y-[-50%]"
             onClick={() => setIsClosed(true)}
             aria-label="Close AI Coach"
           >
