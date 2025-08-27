@@ -136,14 +136,13 @@ export const FloatingAICoach = ({
               </div>
               AI Financial Coach
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1">
               {isProcessing && <span className="text-xs bg-ai-primary/10 text-ai-primary px-2 py-1 rounded-full">
                   Analyzing...
                 </span>}
-              <Button size="sm" variant="ghost" className="h-8 w-8 p-0" onClick={() => setIsMinimized(true)} aria-label="Minimize AI Coach">
-                <Minimize2 className="w-4 h-4" />
+              <Button size="sm" variant="ghost" className="h-6 w-6 p-0" onClick={() => setIsMinimized(true)} aria-label="Minimize AI Coach">
+                <Minimize2 className="w-3 h-3" />
               </Button>
-              
             </div>
           </CardTitle>
         </CardHeader>
