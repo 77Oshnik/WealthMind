@@ -22,7 +22,7 @@ export const DashboardHeader = ({ isAiActive }: DashboardHeaderProps) => {
             <div className="h-6 w-px bg-border" />
             <div className="flex items-center gap-2">
               <Home className="w-5 h-5 text-primary" />
-              <h1 className="text-xl font-semibold">Financial Dashboard</h1>
+              <h1 className="text-xl font-semibold">Wealthmind Dashboard</h1>
             </div>
           </div>
           <div className="flex items-center gap-3">
