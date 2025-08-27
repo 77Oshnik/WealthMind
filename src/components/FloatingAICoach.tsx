@@ -186,7 +186,7 @@ export const FloatingAICoach = ({ onInsightGenerated }: FloatingAICoachProps) =>
   }
 
   return (
-    <div className="fixed right-6 bottom-8 lg:bottom-6 z-[200] w-96">
+    <div className="fixed right-6 bottom-8 lg:bottom-6 z-[200] w-80">
       <Card className="shadow-2xl border-ai-primary/20 backdrop-blur-sm bg-card/95">
         <CardHeader className="pb-3">
           <CardTitle className="flex items-center justify-between">
@@ -228,7 +228,7 @@ export const FloatingAICoach = ({ onInsightGenerated }: FloatingAICoachProps) =>
         </CardHeader>
         
         <CardContent className="space-y-4">
-          <ScrollArea className="h-80 pr-4">
+          <ScrollArea className="h-64 pr-4">
             <div className="space-y-4 pb-4">
               {messages.map((message) => (
                 <div
