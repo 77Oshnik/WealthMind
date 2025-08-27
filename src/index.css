@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Financial Coach Design System - Modern, engaging, and trustworthy
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base theme - Soft dark backgrounds, easier on eyes */
+    --background: 220 15% 6%;
+    --foreground: 220 10% 92%;
+
+    /* Cards with subtle elevation */
+    --card: 220 15% 8%;
+    --card-foreground: 220 10% 92%;
+
+    /* Interactive elements */
+    --popover: 220 15% 8%;
+    --popover-foreground: 220 10% 92%;
+
+    /* Primary - Trust & Growth (Modern Blue) */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 100% 75%;
+
+    /* Secondary - Warmth & Engagement */
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 220 10% 85%;
+
+    /* Muted - Subtle backgrounds */
+    --muted: 220 15% 14%;
+    --muted-foreground: 220 10% 65%;
+
+    /* Accent - Highlight & Success */
+    --accent: 145 65% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 145 75% 65%;
+
+    /* Financial status colors */
+    --success: 145 65% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 95% 55%;
+    --warning-foreground: 0 0% 100%;
+    --danger: 0 75% 55%;
+    --danger-foreground: 0 0% 100%;
+
+    /* AI Agent colors - Modern gradient palette */
+    --ai-primary: 250 100% 75%;
+    --ai-secondary: 270 90% 65%;
+    --ai-accent: 230 100% 85%;
+    --ai-glow: 250 100% 90%;
+    --ai-processing: 285 80% 60%;
+
+    /* Spending categories */
+    --spending: 15 85% 60%;
+    --savings: 145 65% 50%;
+    --income: 200 95% 45%;
+
+    /* Interactive borders and rings */
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 200 95% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Beautiful gradients for engagement */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(var(--accent-glow)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--warning)), hsl(35 85% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 20% 99%));
+    --gradient-ai: linear-gradient(135deg, hsl(var(--ai-primary)), hsl(var(--ai-secondary)));
+    --gradient-ai-glow: linear-gradient(135deg, hsl(var(--ai-accent)), hsl(var(--ai-glow)));
+
+    /* Elegant shadows */
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+    --shadow-elevated: 0 8px 30px -8px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 220 15% 92%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 220 15% 92%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 220 15% 92%;
+
+    --primary: 200 95% 55%;
+    --primary-foreground: 220 20% 8%;
+    --primary-glow: 200 100% 70%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 145 65% 55%;
+    --accent-foreground: 220 20% 8%;
+    --accent-glow: 145 75% 70%;
+
+    --success: 145 65% 55%;
+    --warning: 35 95% 60%;
+    --danger: 0 75% 60%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 200 95% 55%;
+
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 20% 12%));
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 8px 30px -8px hsl(0 0% 0% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Financial Coach Component Styles */
+  .financial-card {
+    @apply bg-gradient-to-br from-card to-card/80 backdrop-blur-sm border border-border/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .metric-card {
+    @apply financial-card p-6 hover:scale-[1.02] cursor-pointer;
+  }
+
+  .progress-ring {
+    @apply transition-all duration-1000 ease-out;
+  }
+
+  .badge-earned {
+    @apply animate-bounce;
+  }
+
+  /* AI Agent Styles */
+  .ai-agent-card {
+    @apply bg-gradient-to-br from-ai-primary/10 to-ai-secondary/10 backdrop-blur-sm border border-ai-primary/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .ai-processing {
+    @apply animate-pulse;
+  }
+
+  .ai-thinking-dots {
+    animation: thinking 1.5s ease-in-out infinite;
+  }
+
+  .ai-typing {
+    animation: typing 2s ease-in-out infinite;
+  }
+
+  .live-update {
+    animation: liveUpdate 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  /* Financial animations */
+  .animate-counter {
+    animation: countUp 2s ease-out;
+  }
+
+  .animate-progress {
+    animation: progressFill 1.5s ease-out;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+/* Keyframes for financial animations */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes progressFill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  to { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+}
+
+/* AI Agent Animations */
+@keyframes thinking {
+  0%, 20% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
+}
+
+@keyframes liveUpdate {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 hsl(var(--ai-primary) / 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 10px hsl(var(--ai-primary) / 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 hsl(var(--ai-primary) / 0); }
+}
+
+@keyframes aiPulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
