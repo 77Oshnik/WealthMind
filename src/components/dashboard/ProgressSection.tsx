@@ -4,7 +4,7 @@ import { LiveFinancialData } from '@/components/LiveFinancialData';
 
 export const ProgressSection = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
       {/* Safe to Spend Gauge */}
       <SafeToSpendGauge
         amount={1410}
