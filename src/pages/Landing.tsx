@@ -72,11 +72,11 @@ const Landing = () => {
             {/* Main Headline */}
             <h1 className="text-6xl md:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-primary via-ai-primary to-accent bg-clip-text text-transparent">
-                Your AI Financial
+                Wealthmind
               </span>
               <br />
               <span className="bg-gradient-to-r from-accent via-primary to-ai-secondary bg-clip-text text-transparent">
-                Coach Awaits
+                AI Financial Coach
               </span>
             </h1>
 
@@ -263,7 +263,7 @@ const Landing = () => {
       <div className="px-6 py-20 bg-gradient-to-r from-ai-primary/5 via-primary/5 to-accent/5">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">
-            Why Choose Our <span className="text-ai-primary">AI Financial Coach</span>?
+            Why Choose <span className="text-ai-primary">Wealthmind</span>?
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
             Experience financial coaching that adapts to your unique situation and goals.
@@ -323,7 +323,7 @@ const Landing = () => {
             <Link to="/dashboard" className="flex items-center gap-4">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-ai-primary/80 to-accent/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Bot className="w-6 h-6 animate-bounce relative z-10" />
-              <span className="text-xl font-bold relative z-10">Launch Your AI Financial Coach</span>
+              <span className="text-xl font-bold relative z-10">Launch Wealthmind</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300 relative z-10" />
             </Link>
           </Button>
