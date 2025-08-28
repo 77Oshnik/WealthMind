@@ -154,7 +154,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                     <YAxis 
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
-                      tickFormatter={(value) => `₹₹{(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `₹${(value / 1000).toFixed(1)}k`}
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
@@ -210,12 +210,12 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                       dataKey="amount"
                     >
                       {spendingData.map((entry, index) => (
-                        <Cell key={`cell-₹{index}`} fill={entry.color} />
+                        <Cell key={`cell-${index}`} fill={entry.color} />
                       ))}
                     </Pie>
                     <Tooltip
-                      formatter={(value: any) => [`₹₹{value.toLocaleString()}`, 'Amount']}
-                      labelFormatter={(label) => `Category: ₹{label}`}
+                      formatter={(value: any) => [`₹${value.toLocaleString()}`, 'Amount']}
+                      labelFormatter={(label) => `Category: ${label}`}
                       contentStyle={{
                         backgroundColor: 'hsl(var(--card))',
                         border: '1px solid hsl(var(--border))',
@@ -273,7 +273,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                     <YAxis 
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
-                      tickFormatter={(value) => `₹₹{(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `₹${(value / 1000).toFixed(1)}k`}
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
@@ -326,7 +326,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                     <YAxis 
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
-                      tickFormatter={(value) => `₹₹{(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `₹${(value / 1000).toFixed(1)}k`}
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
