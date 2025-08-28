@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+# WealthMind - AI Financial Coach
 
-## Project info
+**WealthMind** is an AI-powered financial coaching platform designed to help gig workers, informal sector employees, and everyday users make smarter financial decisions. The system adapts to individual spending patterns, income variability, and financial behavior, providing personalized guidance to manage finances and build wealth proactively.
 
-**URL**: https://lovable.dev/projects/2def9209-1fe3-433e-be94-1eac197a1f0e
+---
 
-## How can I edit this code?
+## Table of Contents
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+  - [Financial Health & Behavior](#financial-health--behavior)  
+  - [Investment & Wealth Building](#investment--wealth-building)  
+- [Technology Stack](#technology-stack)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Project Overview
+WealthMind delivers a comprehensive financial coaching system leveraging AI and machine learning to provide actionable insights. It empowers users to track income and expenses, plan budgets, set savings goals, simulate investments, and make informed financial decisions, even with variable income.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2def9209-1fe3-433e-be94-1eac197a1f0e) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+### Financial Health & Behavior
+- **Income & Expense Tracking Dashboard:** Monitors real-time spending patterns and income variability.  
+- **Smart Budgeting Tool:** Helps users manage finances and avoid overspending.  
+- **Emergency Fund Planning & Safe-to-Spend Calculator:** Provides recommendations for managing income fluctuations.  
+- **Subscription Management & Financial Behavior Score:** Encourages better financial habits through tracking.  
+- **Savings Goals Tracker & AI-based Income Prediction:** Offers proactive guidance based on predicted cash flow.  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Investment & Wealth Building
+- **Risk Profile Analyzer & AI Portfolio Recommendation Engine:** Provides personalized investment suggestions.  
+- **Micro-Investment Simulations & Auto-Invest Planner:** Enables intelligent small-scale investments for users with variable income.  
+- **“What-If” Scenario Simulations:** Projects future financial outcomes to aid decision-making.  
+- **Fractional Ownership Marketplace & SRI/Ethical Filters:** Offers accessible wealth-building options.  
+- **Gamified Investment Tracker:** Encourages consistent engagement and financial growth.  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Technology Stack
+- **Frontend:** React.js, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **AI/ML:** Python-based prediction models (for income forecasting and personalized recommendations)  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2def9209-1fe3-433e-be94-1eac197a1f0e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
