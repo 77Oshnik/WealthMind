@@ -66,8 +66,8 @@ export const SafeToSpendGauge = ({
                 stroke={getGaugeColor()}
                 strokeWidth="8"
                 strokeLinecap="round"
-                strokeDasharray={`${2 * Math.PI * 40}`}
-                strokeDashoffset={`${2 * Math.PI * 40 * (1 - percentage / 100)}`}
+                strokeDasharray={`₹{2 * Math.PI * 40}`}
+                strokeDashoffset={`₹{2 * Math.PI * 40 * (1 - percentage / 100)}`}
                 className="progress-ring animate-progress"
                 style={{
                   filter: 'drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))'
@@ -76,7 +76,7 @@ export const SafeToSpendGauge = ({
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <p className="text-2xl font-bold animate-counter">${amount}</p>
+                <p className="text-2xl font-bold animate-counter">₹{amount}</p>
                 <p className="text-xs text-muted-foreground">{percentage}%</p>
               </div>
             </div>
