@@ -85,7 +85,7 @@ export const SafeToSpendGauge = ({
         
         <div className="text-center space-y-2">
           <p className="text-sm text-muted-foreground">
-            Of ${monthlyBudget} monthly budget
+            Of ₹{monthlyBudget} monthly budget
           </p>
           <p className="text-sm font-medium" style={{ color: getGaugeColor() }}>
             {getStatusMessage()}
