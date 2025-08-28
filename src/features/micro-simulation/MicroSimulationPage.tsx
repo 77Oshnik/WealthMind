@@ -12,7 +12,7 @@ import { ContributionTimeline } from './components/ContributionTimeline';
 import { SavePlanModal } from './components/SavePlanModal';
 
 const defaultInputs: MicroSimulationInputs = {
-  currency: 'USD',
+  currency: 'INR',
   lumpSum: 0,
   periodicAmount: 5,
   frequency: 'daily',

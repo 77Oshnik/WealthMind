@@ -221,7 +221,7 @@ export function generateRoundUps(txCount: number, avgAmount: number, multiplier:
     const variation = (Math.random() - 0.5) * avgAmount * 0.5;
     const amount = Math.max(0.01, avgAmount + variation);
     
-    // Calculate round-up (assuming round up to nearest dollar)
+    // Calculate round-up (assuming round up to nearest rupee)
     const roundUp = (1 - (amount % 1)) * multiplier;
     transactions.push(roundUp);
   }

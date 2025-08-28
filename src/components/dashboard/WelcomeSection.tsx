@@ -14,7 +14,7 @@ export const WelcomeSection = ({ financialScore, aiInsightsCount }: WelcomeSecti
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">
               <span className="bg-gradient-to-r from-primary to-ai-primary bg-clip-text text-transparent">
-                Good morning, Alex! 👋
+                Good morning, Arjun! 👋
               </span>
             </h2>
             <p className="text-muted-foreground text-lg mb-6">

@@ -22,7 +22,7 @@ export const FloatingAICoach = ({
   const [messages, setMessages] = useState<Message[]>([{
     id: '1',
     type: 'ai',
-    content: "Hi Alex! I'm your AI Financial Coach. I've been analyzing your spending patterns and I have some insights ready for you! 🤖✨",
+    content: "Hi Arjun! I'm your AI Financial Coach. I've been analyzing your spending patterns and I have some insights ready for you! 🤖✨",
     timestamp: new Date(),
     status: 'complete'
   }]);
@@ -33,10 +33,10 @@ export const FloatingAICoach = ({
   const [isClosed, setIsClosed] = useState(false);
   const aiSuggestions = ["Analyze my spending patterns", "Review my emergency fund progress", "Optimize my monthly budget", "Find savings opportunities", "Check my financial health score"];
   const aiResponses = {
-    "analyze": "I've analyzed your spending! 📊 You're spending 23% more on subscriptions than last month. I found 3 unused subscriptions costing $47/month. Want me to help you cancel them?",
-    "emergency": "Great news! 🎉 Your emergency fund is at 71% of your target. Based on your current savings rate, you'll reach your $12,000 goal in 4.2 months. I recommend increasing your automatic transfer by $200/month to reach it faster.",
-    "budget": "I've optimized your budget! 💡 By reallocating $150 from dining out to savings, you could increase your savings rate to 38%. This would help you reach financial goals 15% faster!",
-    "savings": "Found 5 saving opportunities! 💰 Cancel unused subscriptions ($47/month), switch to generic brands ($85/month), reduce delivery fees ($32/month). Total potential savings: $164/month!",
+    "analyze": "I've analyzed your spending! 📊 You're spending 23% more on subscriptions than last month. I found 3 unused subscriptions costing ₹3,500/month. Want me to help you cancel them?",
+    "emergency": "Great news! 🎉 Your emergency fund is at 71% of your target. Based on your current savings rate, you'll reach your ₹9,00,000 goal in 4.2 months. I recommend increasing your automatic transfer by ₹15,000/month to reach it faster.",
+    "budget": "I've optimized your budget! 💡 By reallocating ₹11,000 from dining out to savings, you could increase your savings rate to 38%. This would help you reach financial goals 15% faster!",
+    "savings": "Found 5 saving opportunities! 💰 Cancel unused subscriptions (₹3,500/month), switch to generic brands (₹6,300/month), reduce delivery fees (₹2,400/month). Total potential savings: ₹12,200/month!",
     "health": "Your financial health score improved to 89! 🌟 You're excelling at budgeting (95%) and saving (87%). Focus on reducing impulse purchases to reach 95+ overall score."
   };
   const simulateAIWork = async (query: string) => {
@@ -90,7 +90,7 @@ export const FloatingAICoach = ({
   // Auto-generate insights
   useEffect(() => {
     const interval = setInterval(() => {
-      const insights = ["I noticed your coffee spending is up 12% this week. Want me to find cheaper alternatives nearby?", "Your savings rate is trending upward! You're on track to exceed your monthly goal by $150.", "I found a better interest rate for your emergency fund. Switching could earn you $45 more per year.", "Your utility bills seem higher than usual. I can help you optimize your energy usage."];
+      const insights = ["I noticed your coffee spending is up 12% this week. Want me to find cheaper alternatives nearby?", "Your savings rate is trending upward! You're on track to exceed your monthly goal by ₹11,000.", "I found a better interest rate for your emergency fund. Switching could earn you ₹3,300 more per year.", "Your utility bills seem higher than usual. I can help you optimize your energy usage."];
       const randomInsight = insights[Math.floor(Math.random() * insights.length)];
       const aiMessage: Message = {
         id: Date.now().toString(),

@@ -6,7 +6,7 @@ export const FinancialOverview = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <FinancialMetricCard
         title="Total Income"
-        value="$4,250"
+        value="₹3,25,000"
         change="+12% from last month"
         changeType="positive"
         icon={DollarSign}
@@ -14,7 +14,7 @@ export const FinancialOverview = () => {
       />
       <FinancialMetricCard
         title="Total Expenses"
-        value="$2,840"
+        value="₹2,15,000"
         change="-5% from last month"
         changeType="positive"
         icon={TrendingUp}
@@ -30,8 +30,8 @@ export const FinancialOverview = () => {
       />
       <FinancialMetricCard
         title="Emergency Fund"
-        value="$8,500"
-        change="Goal: $12,000"
+        value="₹6,50,000"
+        change="Goal: ₹9,00,000"
         changeType="neutral"
         icon={Shield}
         gradient="bg-gradient-to-br from-success to-accent"
