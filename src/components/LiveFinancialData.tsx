@@ -122,8 +122,8 @@ export const LiveFinancialData = () => {
                 key={item.id}
                 className={`
                   flex items-center justify-between p-3 rounded-lg border
-                  ${getTypeColor(item.type)}
-                  ${index === 0 ? 'live-update' : ''}
+                  ₹{getTypeColor(item.type)}
+                  ₹{index === 0 ? 'live-update' : ''}
                   transition-all hover:scale-[1.02]
                 `}
               >
@@ -139,10 +139,10 @@ export const LiveFinancialData = () => {
                 
                 {item.amount !== 0 && (
                   <div className="text-right">
-                    <p className={`font-semibold ${
+                    <p className={`font-semibold ₹{
                       item.amount > 0 ? 'text-success' : 'text-danger'
                     }`}>
-                      {item.amount > 0 ? '+' : ''}${Math.abs(item.amount).toFixed(2)}
+                      {item.amount > 0 ? '+' : ''}₹{Math.abs(item.amount).toFixed(2)}
                     </p>
                   </div>
                 )}
