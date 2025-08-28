@@ -56,7 +56,7 @@ const generateCashFlowData = () => {
   const days = Array.from({ length: 30 }, (_, i) => i + 1);
   
   return days.map(day => ({
-    day: `${day}`,
+    day: `₹{day}`,
     balance: Math.floor(Math.random() * 2000) + 8000 + (day * 50),
     inflow: Math.floor(Math.random() * 300) + 100,
     outflow: Math.floor(Math.random() * 250) + 50,
@@ -96,7 +96,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                 style={{ backgroundColor: entry.color }}
               />
               <span className="text-muted-foreground">{entry.dataKey}:</span>
-              <span className="font-medium">${entry.value?.toLocaleString()}</span>
+              <span className="font-medium">₹{entry.value?.toLocaleString()}</span>
             </div>
           ))}
         </div>
@@ -106,7 +106,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
   };
 
   return (
-    <div className={`space-y-6 ${className}`}>
+    <div className={`space-y-6 ₹{className}`}>
       <Tabs value={activeChart} onValueChange={setActiveChart} className="w-full">
         <TabsList className="grid w-full grid-cols-4 bg-muted/50">
           <TabsTrigger value="overview" className="text-xs">
@@ -154,7 +154,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                     <YAxis 
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
-                      tickFormatter={(value) => `$${(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `₹₹{(value / 1000).toFixed(1)}k`}
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
@@ -183,7 +183,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
           </Card>
         </TabsContent>
 
-        <TabsContent value="spending" className="space-y-4">
+        <TabsContent value="spending" className="space-y-4" font-color="white">
           <Card className="financial-card">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
@@ -210,16 +210,17 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                       dataKey="amount"
                     >
                       {spendingData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.color} />
+                        <Cell key={`cell-₹{index}`} fill={entry.color} />
                       ))}
                     </Pie>
                     <Tooltip
-                      formatter={(value: any) => [`$${value.toLocaleString()}`, 'Amount']}
-                      labelFormatter={(label) => `Category: ${label}`}
+                      formatter={(value: any) => [`₹₹{value.toLocaleString()}`, 'Amount']}
+                      labelFormatter={(label) => `Category: ₹{label}`}
                       contentStyle={{
                         backgroundColor: 'hsl(var(--card))',
                         border: '1px solid hsl(var(--border))',
                         borderRadius: '8px',
+                        color:'white',
                       }}
                     />
                     <Legend 
@@ -272,7 +273,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                     <YAxis 
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
-                      tickFormatter={(value) => `$${(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `₹₹{(value / 1000).toFixed(1)}k`}
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
@@ -325,7 +326,7 @@ export function FinancialCharts({ className }: FinancialChartsProps) {
                     <YAxis 
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
-                      tickFormatter={(value) => `$${(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `₹₹{(value / 1000).toFixed(1)}k`}
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
