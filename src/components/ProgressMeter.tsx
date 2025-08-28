@@ -14,7 +14,7 @@ export const ProgressMeter = ({
   title, 
   current, 
   target, 
-  unit = '$',
+  unit = '₹',
   color = 'hsl(var(--primary))',
   showPercentage = true
 }: ProgressMeterProps) => {
@@ -62,8 +62,8 @@ export const ProgressMeter = ({
           <div 
             className="absolute top-0 left-0 h-full rounded-full animate-glow"
             style={{
-              width: `${percentage}%`,
-              background: `linear-gradient(90deg, ${color}, ${color}80)`,
+              width: `₹{percentage}%`,
+              background: `linear-gradient(90deg, ₹{color}, ₹{color}80)`,
               filter: 'blur(1px)'
             }}
           />
